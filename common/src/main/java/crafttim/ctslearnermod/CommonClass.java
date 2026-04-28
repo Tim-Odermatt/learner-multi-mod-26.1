@@ -1,6 +1,7 @@
 package crafttim.ctslearnermod;
 
-import crafttim.ctslearnermod.platform.Services;
+import crafttim.ctslearnermod.init.ModItems;
+import crafttim.ctslearnermod.services.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
 
@@ -27,5 +28,7 @@ public class CommonClass {
 
             Constants.LOG.info("Hello to Crafttims Learner Mod");
         }
+
+        ModItems.load();
     }
 }

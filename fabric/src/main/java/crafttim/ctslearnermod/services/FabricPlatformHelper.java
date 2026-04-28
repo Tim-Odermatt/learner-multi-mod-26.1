@@ -1,6 +1,6 @@
-package crafttim.ctslearnermod.platform;
+package crafttim.ctslearnermod.services;
 
-import crafttim.ctslearnermod.platform.services.IPlatformHelper;
+import crafttim.ctslearnermod.services.types.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

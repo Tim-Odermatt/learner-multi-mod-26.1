@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "ctslearnermod:item/example_item"
+  }
+}

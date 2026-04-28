@@ -1,6 +1,6 @@
-package crafttim.ctslearnermod.platform;
+package crafttim.ctslearnermod.services;
 
-import crafttim.ctslearnermod.platform.services.IPlatformHelper;
+import crafttim.ctslearnermod.services.types.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 

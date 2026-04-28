@@ -1,4 +1,4 @@
-package crafttim.ctslearnermod.platform.services;
+package crafttim.ctslearnermod.services.types;
 
 public interface IPlatformHelper {
 
