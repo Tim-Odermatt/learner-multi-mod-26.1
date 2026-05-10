@@ -44,7 +44,7 @@ public class NeoForgeRegistryHelper implements IRegistryHelper {
 
     @Override
     public <T extends BlockItem> RegistryHandle<T> registerBlockItem(String name, RegistryHandle<? extends Block> block, BiFunction<Block, Item.Properties, T> item) {
-        return registerItem(name, properties -> item.apply((Block) block.get(), properties)); //why is IDEA screaming at me over the item.apply(block.get())?
+        return registerItem(name, properties -> item.apply((Block) block.get(), properties));
     }
 
     @Override
@@ -58,7 +58,7 @@ public class NeoForgeRegistryHelper implements IRegistryHelper {
             }
 
             @Override
-            public Object get() {
+            public T get() {
                 return deferredItem.get();
             }
         };

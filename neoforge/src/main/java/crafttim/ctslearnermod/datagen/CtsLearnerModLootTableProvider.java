@@ -36,7 +36,7 @@ public class CtsLearnerModLootTableProvider extends LootTableProvider {
 
         @Override
         protected void generate() {
-            dropSelf((Block) ModBlocks.EXAMPLE_BLOCK.block().get());
+            dropSelf(ModBlocks.EXAMPLE_BLOCK.block().get());
         }
 
         @Override

@@ -18,9 +18,9 @@ public class CtsLearnerModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        itemModels.generateFlatItem((Item) ModItems.EXAMPLE_ITEM.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem((Item) ModItems.EXAMPLE_ITEM2.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.EXAMPLE_ITEM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.EXAMPLE_ITEM2.get(), ModelTemplates.FLAT_ITEM);
 
-        blockModels.createTrivialCube((Block) ModBlocks.EXAMPLE_BLOCK.block().get());
+        blockModels.createTrivialCube(ModBlocks.EXAMPLE_BLOCK.block().get());
     }
 }

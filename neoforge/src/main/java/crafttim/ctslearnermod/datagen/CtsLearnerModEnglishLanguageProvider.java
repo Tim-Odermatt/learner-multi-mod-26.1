@@ -17,10 +17,10 @@ public class CtsLearnerModEnglishLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add((Item) ModItems.EXAMPLE_ITEM.get(), "Example Item");
-        add((Item) ModItems.EXAMPLE_ITEM2.get(), "Example Item 2");
-        add((Block) ModBlocks.EXAMPLE_BLOCK.block().get(), "Example Block");
-        add((Item) ModBlocks.EXAMPLE_BLOCK.item().get(), "Example Block");
+        add(ModItems.EXAMPLE_ITEM.get(), "Example Item");
+        add(ModItems.EXAMPLE_ITEM2.get(), "Example Item 2");
+        add(ModBlocks.EXAMPLE_BLOCK.block().get(), "Example Block");
+        add(ModBlocks.EXAMPLE_BLOCK.item().get(), "Example Block");
     }
 
     private void add(Component component, String value) {
