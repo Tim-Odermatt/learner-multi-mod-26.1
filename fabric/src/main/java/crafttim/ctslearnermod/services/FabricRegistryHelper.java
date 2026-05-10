@@ -1,9 +1,7 @@
 package crafttim.ctslearnermod.services;
 
-import crafttim.ctslearnermod.services.types.IPlatformHelper;
 import crafttim.ctslearnermod.services.types.IRegistryHelper;
 import crafttim.ctslearnermod.services.util.RegistryHandle;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
@@ -22,7 +20,8 @@ public class FabricRegistryHelper implements IRegistryHelper {
     public <T extends Block> RegistryHandle<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> block) {
         ResourceKey<Block> key = IRegistryHelper.blockKey(name);
         Identifier id = key.identifier();
-        T registered = Registry.register(BuiltInRegistries.BLOCK, id, block.apply(BlockBehaviour.Properties.of().setId(key)));
+        T registered = Registry.register(BuiltInRegistries.BLOCK, id,
+                block.apply(BlockBehaviour.Properties.of().setId(key)));
 
         return new RegistryHandle<>() {
             @Override
@@ -46,7 +45,8 @@ public class FabricRegistryHelper implements IRegistryHelper {
     public <T extends Item> RegistryHandle<T> registerItem(String name, Function<Item.Properties, T> item) {
         ResourceKey<Item> key = IRegistryHelper.itemKey(name);
         Identifier id = key.identifier();
-        T registered = Registry.register(BuiltInRegistries.ITEM, id, item.apply(new Item.Properties().setId(key)));
+        T registered = Registry.register(BuiltInRegistries.ITEM, id,
+                item.apply(new Item.Properties().setId(key)));
 
         return new RegistryHandle<>() {
             @Override

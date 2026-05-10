@@ -17,4 +17,3 @@ public final class ModItems {
     public static final RegistryHandle<Item> EXAMPLE_ITEM2 = Services.REGISTRY.registerItem("example_item2",
             Item::new);
 }
-
